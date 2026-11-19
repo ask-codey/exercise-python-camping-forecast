@@ -1,0 +1,112 @@
+{
+  "@context": [
+    "https://geojson.org/geojson-ld/geojson-context.jsonld",
+    {
+      "@version": "1.1",
+      "wx": "https://api.weather.gov/ontology#",
+      "s": "https://schema.org/",
+      "geo": "http://www.opengis.net/ont/geosparql#",
+      "unit": "http://codes.wmo.int/common/unit/",
+      "@vocab": "https://api.weather.gov/ontology#",
+      "geometry": {
+        "@id": "s:GeoCoordinates",
+        "@type": "geo:wktLiteral"
+      },
+      "city": "s:addressLocality",
+      "state": "s:addressRegion",
+      "distance": {
+        "@id": "s:Distance",
+        "@type": "s:QuantitativeValue"
+      },
+      "bearing": {
+        "@type": "s:QuantitativeValue"
+      },
+      "value": {
+        "@id": "s:value"
+      },
+      "unitCode": {
+        "@id": "s:unitCode",
+        "@type": "@id"
+      },
+      "forecastOffice": {
+        "@type": "@id"
+      },
+      "forecastGridData": {
+        "@type": "@id"
+      },
+      "publicZone": {
+        "@type": "@id"
+      },
+      "county": {
+        "@type": "@id"
+      }
+    }
+  ],
+  "id": "https://api.weather.gov/points/44.8783,-122.6534",
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -122.6534,
+      44.8783
+    ]
+  },
+  "properties": {
+    "@id": "https://api.weather.gov/points/44.8783,-122.6534",
+    "@type": "wx:Point",
+    "cwa": "PQR",
+    "type": "land",
+    "forecastOffice": "https://api.weather.gov/offices/PQR",
+    "gridId": "PQR",
+    "gridX": 107,
+    "gridY": 74,
+    "forecast": "https://api.weather.gov/gridpoints/PQR/107,74/forecast",
+    "forecastHourly": "https://api.weather.gov/gridpoints/PQR/107,74/forecast/hourly",
+    "forecastGridData": "https://api.weather.gov/gridpoints/PQR/107,74",
+    "observationStations": "https://api.weather.gov/gridpoints/PQR/107,74/stations",
+    "relativeLocation": {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.6284238,
+          44.7912465
+        ]
+      },
+      "properties": {
+        "city": "Mehama",
+        "state": "OR",
+        "distance": {
+          "unitCode": "wmoUnit:m",
+          "value": 9468.0126310099
+        },
+        "bearing": {
+          "unitCode": "wmoUnit:degree_(angle)",
+          "value": 348
+        }
+      }
+    },
+    "forecastZone": "https://api.weather.gov/zones/forecast/ORZ124",
+    "county": "https://api.weather.gov/zones/county/ORC047",
+    "fireWeatherZone": "https://api.weather.gov/zones/fire/ORZ686",
+    "timeZone": "America/Los_Angeles",
+    "radarStation": "KRTX",
+    "astronomicalData": {
+      "sunrise": "2026-11-17T07:11:03-08:00",
+      "sunset": "2026-11-17T16:40:12-08:00",
+      "transit": "2026-11-17T11:55:38-08:00",
+      "civilTwilightBegin": "2026-11-17T06:39:17-08:00",
+      "civilTwilightEnd": "2026-11-17T17:11:59-08:00",
+      "nauticalTwilightBegin": "2026-11-17T06:03:37-08:00",
+      "nauticalTwilightEnd": "2026-11-17T17:47:38-08:00",
+      "astronomicalTwilightBegin": "2026-11-17T05:28:57-08:00",
+      "astronomicalTwilightEnd": "2026-11-17T18:22:18-08:00"
+    },
+    "nwr": {
+      "transmitter": "WXL96",
+      "sameCode": "041047",
+      "areaBroadcast": "https://api.weather.gov/radio/WXL96/broadcast",
+      "pointBroadcast": "https://api.weather.gov/points/44.8783,-122.6534/radio"
+    }
+  }
+}
